@@ -43,7 +43,7 @@
     "cov-open": "opn coverage/index.html"
   },
   "engines": {
-    "node": "^6.14.3"
+    "node": ">6.14.3"
   },
   "bugs": "https://github.com/oortcloud/node-ddp-client/issues"
 }
