@@ -35,7 +35,7 @@
     "rewire": "~2.5.2"
   },
   "scripts": {
-    "test": "./node_modules/mocha/bin/mocha test"
+    "test": "mocha"
   },
   "engines": {
     "node": "*"
