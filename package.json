@@ -10,7 +10,8 @@
     "Chris Mather <mather.chris@gmail.com> (http://eventedmind.com)",
     "Tarang Patel",
     "Vaughn Iverson <vsivsi@yahoo.com>",
-    "Rony Kubat <rony@kubat.org>"
+    "Rony Kubat <rony@kubat.org>",
+    "Johan Nyman <johan@nytamin.se>"
   ],
   "license": "MIT",
   "main": "lib/ddp-client",
