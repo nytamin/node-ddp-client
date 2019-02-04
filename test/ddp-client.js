@@ -110,6 +110,38 @@ describe("Connect to remote server", function() {
       done();
     }, 15);
   });
+  it('should handle several connect()', function(done) {
+    
+    var warningCallback = sinon.spy((e) => {
+      console.log('AA', e)
+    });
+    process.on('warning', warningCallback) // to catch MaxListenersExceededWarning
+    // process.on('error', warningCallback)
+    // process.on('message', warningCallback)
+
+    var a = new DDPClient();
+    a.connect();
+    a.connect();
+    a.connect();
+    a.connect();
+    a.connect();
+    a.connect();
+    a.connect();
+    a.connect();
+    a.connect();
+    a.connect();
+    a.connect();
+    a.connect();
+    a.connect();
+
+    setTimeout(function() {
+      assert(!warningCallback.called);
+
+      done();
+    }, 15);
+
+    
+  });
 });
 
 
